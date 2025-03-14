@@ -58,6 +58,16 @@ session_start();
         <div class="col5 me-3">
             <a href="" class="text-black text-decoration-none">Become a Seller</a>
         </div>
+        <div class="col5 me-3">
+
+            <?php
+
+            if (isset($_SESSION['account_loggedin'])) {
+            ?>
+                <a href="./logout.php" class="text-black text-decoration-none">Log Out</a>
+
+            <?php } ?>
+        </div>
     </div>
 
     <div class="center">

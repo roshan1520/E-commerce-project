@@ -56,7 +56,7 @@ session_start();
             <a href="" class="text-black text-decoration-none">Cart</a>
         </div>
         <div class="col5 me-3">
-            <a href="" class="text-black text-decoration-none">Become a Seller</a>
+            <a href="./seller/sign_up.php" class="text-black text-decoration-none">Become a Seller</a>
         </div>
         <div class="col5 me-3">
 

@@ -118,7 +118,7 @@ if (isset($_SESSION['account_loggedin'])) {
                 <input type="password" class="l-password" placeholder="Password" name="password">
                 <button class="btn-login">Login</button>
             </form>
-            <div class="f-c"> <a href="">Forget Password</a> <a href="">Create an Account</a></div>
+            <div class="f-c"> <a href="">Forget Password</a> <a href="./sign_up.php">Create an Account</a></div>
 
         </div>
     </div>

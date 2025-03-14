@@ -135,11 +135,13 @@ if (isset($_SESSION['account_loggedin'])) {
 
         </div>
         <div class="login2">
-            <form action="" method="post">
+            <form action="./auth.php" method="post">
                 <input type="text" name="s_name" placeholder="Enter Your Name" required><br>
+                <input type="text" name="username" placeholder="Enter Your Username" required><br>
                 <input type="email" name="s_email" placeholder="Enter Your Email" required>
                 <input type="phone" name="s_phone" placeholder="Enter Your Phone Number" required>
                 <input type="password" placeholder="Enter Password" name="s_password" required> <br>
+                <input type="password" placeholder="Confirm Password" name="cpassword" required>
                 <button class="btn-signup">Sign Up</button>
             </form>
             <div class="f-c"> <a href="">Already have an account</a> </div>

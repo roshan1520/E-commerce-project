@@ -1,3 +1,17 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['account_loggedin'])) {
+    header('Location: index.php');
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,6 +19,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flipkart-SignUp</title>
+    <link
+        rel="stylesheet"
+        href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link
+        rel="stylesheet"
+        href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <style>
         * {
             margin: 0;
@@ -21,23 +42,29 @@
             margin-left: auto;
             margin-right: auto;
             box-shadow: 2px 2px 12px 2px grey;
+            background-color: white;
             /* border: 1px solid black; */
+
         }
 
         .login1 {
             background-color: blue;
             color: white;
-            height: 500px;
+            height: 600px;
             width: 80%;
             padding: 50px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             line-height: 30px;
+            margin: 0px;
+
         }
 
         .login2 {
             width: 80%;
             height: 60%;
             padding: 10%;
+            margin: 0px;
+            padding: 0px;
 
         }
 
@@ -45,10 +72,12 @@
             border: none;
             padding: 10px;
             margin: 10px;
-            width: 100%;
+            width: 90%;
             height: 40px;
             border-bottom: 1px solid black;
             font-size: 20px;
+            background-color: white;
+            border-radius: 0px;
         }
 
         .btn-signup {
@@ -56,16 +85,18 @@
             border: none;
             padding: 10px;
             margin: 10px;
-            width: 100%;
+            width: 90%;
             height: 40px;
             color: white;
             cursor: pointer;
             border-radius: 20px;
+
         }
 
         .btn-signup:hover {
             font-size: 20px;
             height: 50px;
+            position: relative;
         }
 
         .f-c {
@@ -94,6 +125,9 @@
 </head>
 
 <body>
+    <?php
+    include('nav.php');
+    ?>
     <div class="main">
         <div class="login1">
             <h1>Flipkart Sign Up</h1>
